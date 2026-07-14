@@ -23,7 +23,17 @@ PersonalAssistant.prototype.reportMood = function() {
 };
  
 let jarvis = new PersonalAssistant("Jarvis");
-jarvis.addTask("Test task");
+console.log(`Hi, I'm ${jarvis.name}, your personal assistant.`);
+ 
+jarvis.mood = "calm";
 jarvis.reportMood();
+ 
+jarvis.addTask("Finish JS assignment");
+jarvis.addTask("Reply to work emails");
+jarvis.addTask("Go grocery shopping");
+ 
+jarvis.completeTask();
 jarvis.completeTask();
  
+jarvis.mood = "accomplished";
+jarvis.reportMood();
